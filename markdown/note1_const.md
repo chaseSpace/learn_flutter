@@ -2,6 +2,7 @@
 
 ### 开始
 
+- 有独立渲染引擎，不依赖原生UI
 - 一切皆Widget：部件。
 - 入口 main.dart (必须`import 'package:flutter/material.dart';`)
 
@@ -30,13 +31,13 @@ void main() {
 }
 ```
 
-#### Const 关键字
+### Const 关键字
 
 Flutter的核心渲染机制是【增量渲染】，`const`帮助Flutter过滤那些不会改变的组件，减少渲染工作，提高性能。
 
 > 优于原生开发的全量编译，这能提高开发效率。
 
-#### 认识构造函数
+### 认识构造函数
 
 ```plaintext
 class Text extends StatelessWidget {
@@ -63,3 +64,7 @@ class Text extends StatelessWidget {
 执行初始化逻辑。
 
 然后，`const Text.rich(...)`是Text的方法。
+
+### final 修饰符
+
+修饰只能被初始化一次的变量。final和const的区别是，const是编译时常量，final是运行时常量。经常使用它们可以让App更高效。

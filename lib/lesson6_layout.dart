@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/protocol/svc/userpb/ext.pb.dart';
+import 'package:flutter_demo/protocol/svc/userpb/ext.pbjson.dart';
 
 void main() => runApp(const MyApp());
 
